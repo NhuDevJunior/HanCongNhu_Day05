@@ -1,10 +1,22 @@
 package com.example.login;
 
-public class Contact {
-    String namefood;
+import java.io.Serializable;
 
-    public Contact(String namefood) {
+public class Contact implements Serializable {
+    String namefood;
+    int soluong;
+
+    public void setSoluong(int soluong) {
+        this.soluong = soluong;
+    }
+
+    public int getSoluong() {
+        return soluong;
+    }
+
+    public Contact(String namefood, int soluong) {
         this.namefood = namefood;
+        this.soluong = soluong;
     }
 
     public String getNamefood() {

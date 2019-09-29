@@ -22,7 +22,16 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/shoping"
+
             />
+        <TextView
+            android:id="@+id/shopping"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/vien2"
+            android:text="  0"
+            />
+
     </LinearLayout>
     <TextView
         android:layout_marginLeft="15dp"
@@ -60,6 +69,7 @@
             />
     </LinearLayout>
     <Button
+        android:id="@+id/order"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -4,11 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Bill">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="success full"
+        android:text="Hoa Don"
         />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_marginTop="10dp"
+    android:id="@+id/rvlist2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

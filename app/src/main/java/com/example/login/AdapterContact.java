@@ -3,6 +3,7 @@ package com.example.login;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -35,7 +36,8 @@ class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.Viewhodoer> {
         final Contact contacts=contact.get(position);
 
         holder.tvNameFood.setText(contacts.getNamefood());
-
+        String sl=String.valueOf(contacts.soluong);
+        holder.tvSoluong.setText(sl);
 
         holder.tvNameFood.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,13 +53,15 @@ class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.Viewhodoer> {
         return contact.size();
     }
 
-    public class Viewhodoer extends RecyclerView.ViewHolder {
+    public static class Viewhodoer extends RecyclerView.ViewHolder {
         TextView tvNameFood;
+        TextView tvSoluong;
 
         public Viewhodoer(@NonNull View itemView) {
 
             super(itemView);
             tvNameFood = itemView.findViewById(R.id.tvnamefood);
+            tvSoluong=itemView.findViewById(R.id.tvsoluong);
         }
 
     }
